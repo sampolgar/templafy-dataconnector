@@ -2,10 +2,10 @@
   "name": "templafy-dataconnector",
   "version": "1.0.0",
   "description": "Templafy Data Connector",
-  "main": "src/app.ts",
+  "main": "src/server.ts",
   "scripts": {
-    "scripts": "node dist/app.js",
-    "dev": "nodemon src/app.ts",
+    "scripts": "node dist/server.js",
+    "dev": "nodemon src/server.ts",
     "build": "tsc -p ."
   },
   "repository": {
@@ -30,6 +30,9 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "nedb": "^1.8.0",
+    "simple-odata-server": "^1.1.2",
+    "simple-odata-server-nedb": "^1.0.0"
   }
 }
